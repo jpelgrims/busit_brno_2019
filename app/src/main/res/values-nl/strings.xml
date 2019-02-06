@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BusITWeek_app1</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="title_activity_simple_puzzle">Simpele Puzzel</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_choice_puzzle">Keuzepuzzel</string>
+    <string name="title_activity_image_puzzle">Afbeeldingspuzzel</string>
+    <string name="title_activity_finish">Einde</string>
+    <string name="SimplePuzzleQuestionText">Dit is waar het antwoord komt</string>
+</resources>

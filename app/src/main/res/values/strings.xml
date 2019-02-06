@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BusITWeek_app1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_simple_puzzle">SimplePuzzleActivity</string>
+    <string name="title_activity_choice_puzzle">ChoicePuzzleActivity</string>
+    <string name="title_activity_image_puzzle">ImagePuzzleActivity</string>
+    <string name="title_activity_finish">FinishActivity</string>
+    <string name="SimplePuzzleQuestionText">This is where the question will be placed</string>
+</resources>

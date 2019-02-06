@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SimplePuzzleActivity"
+    tools:showIn="@layout/simple_puzzle_activity"
+    style="@style/style_nestedscrollview">
+
+    <LinearLayout style="@style/style_linearlayout">
+
+        <TextView
+            android:id="@+id/simple_puzzle_question"
+            style="@style/style_question_text" />
+
+        <EditText
+            android:id="@+id/simple_puzzle_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the answer here"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"/>
+
+
+        <Button
+            android:id="@+id/simple_puzzle_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
