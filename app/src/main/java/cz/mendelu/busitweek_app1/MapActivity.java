@@ -27,6 +27,8 @@ import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.annotations.Marker;
 import com.mapbox.mapboxsdk.annotations.MarkerOptions;
+import com.mapbox.mapboxsdk.camera.CameraUpdate;
+import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.location.LocationComponent;
 import com.mapbox.mapboxsdk.maps.MapView;
@@ -105,6 +107,17 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mapBoxMap.getUiSettings().setAllGesturesEnabled(true);
         initializeListeners();
         updateMarkers();
+
+        LatLng pos = currentMarker.getPosition();
+        zoomToLocation(pos);
+    }
+
+    private void zoomToLocation(LatLng location){
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(location, 17);
+
+        if (mapBoxMap != null) {
+            mapBoxMap.moveCamera(cameraUpdate);
+        }
     }
 
     private void initializeListeners() {
