@@ -311,7 +311,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 locationComponent.setLocationComponentEnabled(true);
             }
         } else {
-            //permissionsManager = new PermissionsManager(this);
+            permissionsManager = new PermissionsManager(this);
             permissionsManager.requestLocationPermissions(this);
         }
     }
@@ -364,6 +364,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 } else {
                     runPuzzleActivity(currentTask.getPuzzle());
                 }
+            }
+        } else if (currentTask != null && currentTask instanceof CodeTask) {
+            if (currentTask.getName().equals("5")) {
+                Intent intent = new Intent(MapActivity.this, PeeActivity.class);
+                startActivity(intent);
             }
         }
     }
