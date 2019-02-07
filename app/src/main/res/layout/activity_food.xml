@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImagePuzzleActivity">
-    <include layout="@layout/content_image_puzzle" />
+    tools:context=".FoodActivity">
 
+    <include layout="@layout/content_food" />
 
 </android.support.design.widget.CoordinatorLayout>
