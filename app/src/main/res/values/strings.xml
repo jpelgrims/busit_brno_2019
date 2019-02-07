@@ -19,4 +19,6 @@
     <string name="reunion_text">Your owner heard you barking. You\'ve been caught!</string>
     <string name="continue_text">Continue</string>
     <string name="play_again">Play Again</string>
+    <string name="title_activity_escape">EscapeActivity</string>
+    <string name="escape_text">You\'ve escaped your master\'s wicked clutches! Your nose picks up a delicious smell. You decide to find the origin of this lovely bouquet.</string>
 </resources>
