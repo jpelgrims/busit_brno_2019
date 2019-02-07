@@ -9,21 +9,26 @@
     tools:showIn="@layout/activity_finish"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/finish_title"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finish_text"
+            android:textSize="30dp"
+            android:height="80dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/finish_text"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="300dp"
+            android:src="@drawable/chocolade"
+            android:layout_gravity="center" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play again?"
-        android:onClick="play_again"
-        />
+        <Button
+            android:id="@+id/play_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/play_again"/>
 
 </LinearLayout>
