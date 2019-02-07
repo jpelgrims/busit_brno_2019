@@ -6,12 +6,12 @@ import cz.mendelu.busItWeek.library.builder.StoryLineBuilder;
 public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
     public BusITWeekDatabaseHelper() {
-        super(19);
+        super(21);
     }
 
     @Override
     protected void onCreate(StoryLineBuilder builder) {
-        builder.addGPSTask("first")
+        builder.addGPSTask("1")
                 .location(49.210094, 16.620026)
                 .radius(100)
                 .victoryPoints(10)
@@ -24,7 +24,7 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                     .puzzleDone()
                 .taskDone();
 
-        builder.addGPSTask("second")
+        builder.addGPSTask("2")
                 .location(3.0, 2.0)
                 .radius(100)
                 .choicePuzzle()
@@ -36,7 +36,7 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                     .puzzleDone()
                 .taskDone();
 
-        builder.addBeaconTask("third")
+        /*builder.addBeaconTask("3")
                 .beacon(1, 1)
                 .imageSelectPuzzle()
                     .addImage(R.drawable.img1, false)
@@ -46,7 +46,7 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                     .question("Best drink ever")
                     .puzzleDone()
                 .location(1.0, 1.0)
-                .taskDone();
+                .taskDone();*/
 
 
 

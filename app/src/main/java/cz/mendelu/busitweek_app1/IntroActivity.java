@@ -22,4 +22,8 @@ public class IntroActivity extends AppCompatActivity {
         Intent intent = new Intent(IntroActivity.this, MapActivity.class);
         startActivity(intent);
     }
+
+    public void play_again(View view) {
+
+    }
 }
