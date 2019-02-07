@@ -9,18 +9,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class EscapeActivity extends AppCompatActivity {
+public class DeadActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_escape);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_dead);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
     }
 
-    public void toMap(View view) {
-        Intent intent = new Intent(EscapeActivity.this, MapActivity.class);
-        startActivity(intent);
-    }
+
 }
