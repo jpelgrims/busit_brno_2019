@@ -79,7 +79,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Mapbox.getInstance(this, "pk.eyJ1IjoianBlbGdyaW1zIiwiYSI6ImNqcnN5N2MxaDBqaWg0M21pamhkZzB2Ym8ifQ.qF8cSzydbJUhIOz6V9UONw");
+        Mapbox.getInstance(this, "pk.eyJ1IjoianBlbGdyaW1zIiwiYSI6ImNqcnV5N2Q0ZzE4OWMzeXFzNW93MW9jbDYifQ.ifQGQUeIMxhU3gxmeZGhbg");
 
         setContentView(R.layout.map_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -287,8 +287,12 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         String qrCode = QRCodeUtil.onScanResult(this, requestCode, resultCode, data);
         if (qrCode != null) {
-            if (qrCode.equals(((CodeTask) currentTask).getQR())) {
+            /*if (qrCode.equals(((CodeTask) currentTask).getQR())) {
                 runPuzzleActivity(currentTask.getPuzzle());
+            }*/
+            if (currentTask.getName().equals("5")) {
+                Intent intent = new Intent(MapActivity.this, DominatedActivity.class);
+                startActivity(intent);
             }
         }
     }

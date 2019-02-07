@@ -20,7 +20,6 @@ public class PeeActivity extends AppCompatActivity {
     }
 
     public void startScan(View view) {
-        QRCodeUtil.startQRScan(new DominatedActivity());
         finish();
     }
 

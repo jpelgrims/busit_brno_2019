@@ -31,6 +31,7 @@
         android:src="@drawable/qr"/>
 
     <android.support.v7.widget.CardView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:id="@+id/beacon_scanning"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

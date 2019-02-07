@@ -17,11 +17,8 @@ public class IntroActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-
-    public void start(View view) {
+    public void continue_intro(View view) {
         Intent intent = new Intent(IntroActivity.this, EscapeActivity.class);
         startActivity(intent);
     }
-
-
 }
