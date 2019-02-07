@@ -27,7 +27,7 @@
     <string name="garbage_text">As if your day couldn\'t get any better... The wind knocked over a garbage can and the ground is covered with mouth-watering snacks. \n\nWhat will you eat?</string>
     <string name="title_activity_caught_cat">CaughtCatActivity</string>
     <string name="title_activity_lost_cat">LostCatActivity</string>
-    <string name="caught_cat_title">"You caught the cat! That's one less degenerate to worry about! You decide to celebrate with marking the territory with your pee."</string>
+    <string name="caught_cat_title">"You caught the cat! That's one less degenerate to worry about! You decide to celebrate with marking the territory with a whiff of pee."</string>
     <string name="caught_cat_text">...</string>
     <string name="lost_cat_title">"You lost the cat and hope other dogs didn't see you. You decide to mask your incompetence and show your dominance with your pee."</string>
     <string name="lost_cat_text">...</string>
@@ -36,6 +36,6 @@
     <string name="wild_cat_text">...</string>
     <string name="title_activity_dead">DeadActivity</string>
     <string name="dead_text">YOU DIED</string>
-    <string name="dead_explanation">Dog\'s don\'t eat chocolate! you should have known better!</string>
+    <string name="dead_explanation">Dog\'s can\'t eat chocolate! You should have known better!</string>
     <string name="title_activity_food">FoodActivity</string>
 </resources>

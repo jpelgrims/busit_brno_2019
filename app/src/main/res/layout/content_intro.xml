@@ -41,6 +41,7 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/white"
         android:textSize="12dp"
+        android:layout_margin="20dp"
 
         />
 
