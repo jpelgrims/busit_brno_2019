@@ -18,4 +18,7 @@
     <string name="reunion_text">Your owner heard you barking. You\'ve been caught!</string>
     <string name="continue_text">Continue</string>
     <string name="play_again">Play Again</string>
+    <string name="title_activity_bark">BarkActivity</string>
+    <string name="bark_text">You bump into the dog you over-peed earlier. He\'s charging aggressively towards you. Start barking to show who\'s boss!</string>
+    <string name="start_barking_button">Start barking</string>
 </resources>
