@@ -25,7 +25,7 @@
             android:layout_height="473dp"
             android:layout_gravity="center"
             android:maxHeight="300dp"
-            android:src="@drawable/finishDog" />
+            android:src="@drawable/finishdog" />
 
 
 
