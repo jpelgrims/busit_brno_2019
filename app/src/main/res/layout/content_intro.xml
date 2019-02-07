@@ -17,12 +17,15 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
-        android:src="@drawable/namedog" />
+        android:src="@drawable/namedog"
+        android:layout_marginTop="12dp"/>
 
     <TextView
         style="@style/style_story_text"
         android:text="@string/intro_text"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        android:layout_marginTop="12dp"/>
+
 
     <TextView
         style="@style/style_story_text"
@@ -33,11 +36,11 @@
         android:id="@+id/simple_puzzle_answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginTop="12dp"
         android:hint="@string/name_question_hint"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/white"
-        android:textSize="15dp"
+        android:textSize="12dp"
 
         />
 
