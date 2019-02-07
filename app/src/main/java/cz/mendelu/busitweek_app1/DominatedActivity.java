@@ -24,9 +24,8 @@ public class DominatedActivity extends AppCompatActivity {
         storyLine = StoryLine.open(this, BusITWeekDatabaseHelper.class);
     }
 
-    public void stopScan() {
+    public void finishedScan(View view) {
         storyLine.currentTask().finish(true);
         finish();
     }
-
 }

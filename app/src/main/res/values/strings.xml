@@ -42,4 +42,6 @@
     <string name="dead_text">YOU DIED</string>
     <string name="dead_explanation">Dog\'s don\'t eat chocolate! you should have known better!</string>
     <string name="title_activity_food">FoodActivity</string>
+    <string name="dominated_title">dominated_title</string>
+    <string name="dominated_text">dominated_text</string>
 </resources>

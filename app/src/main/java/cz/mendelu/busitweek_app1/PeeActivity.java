@@ -19,7 +19,7 @@ public class PeeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void startScan() {
+    public void startScan(View view) {
         QRCodeUtil.startQRScan(new DominatedActivity());
         finish();
     }
