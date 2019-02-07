@@ -29,7 +29,7 @@
         android:textColor="@color/colorAppText"
         android:background="@drawable/btn_rounded"
         android:layout_gravity="center"
-        android:onClick="start"
+        android:onClick="toMap"
         android:layout_marginBottom="25dp"
         />
 

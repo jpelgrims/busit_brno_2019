@@ -3,6 +3,8 @@
     package="cz.mendelu.busitweek_app1">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +24,18 @@
         <activity
             android:name=".DeadActivity"
             android:label="@string/title_activity_dead"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WildCatActivity"
+            android:label="@string/title_activity_wild_cat"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LostCatActivity"
+            android:label="@string/title_activity_lost_cat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CaughtCatActivity"
+            android:label="@string/title_activity_caught_cat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EscapeActivity"

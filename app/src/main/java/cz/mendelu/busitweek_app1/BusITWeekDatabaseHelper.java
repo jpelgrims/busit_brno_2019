@@ -6,15 +6,25 @@ import cz.mendelu.busItWeek.library.builder.StoryLineBuilder;
 public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
     public BusITWeekDatabaseHelper() {
-        super(29);
+        super(65);
     }
 
     @Override
     protected void onCreate(StoryLineBuilder builder) {
-        /*
-        builder.addGPSTask("1")
-                .location(49.20968,16.6145)
-                .radius(1000)
+
+        builder.addBeaconTask("1")
+                .beacon(249, 61625)
+                .location(49.209827, 16.614823)
+                .taskDone();
+
+        builder.addGPSTask("2")
+                .location(49.209827, 16.614823)
+                .radius(100)
+                .taskDone();
+
+        builder.addGPSTask("3")
+                .location(49.209827, 16.614823)
+                .radius(100)
                 .victoryPoints(10)
                 .hint("Hint")
                 .simplePuzzle()
@@ -24,30 +34,18 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                     .puzzleTime(3000)
                     .puzzleDone()
                 .taskDone();
-*/
-        builder.addGPSTask("2")
+
+        builder.addGPSTask("4")
                 .location(49.20968,16.6145)
                 .radius(100)
                 .imageSelectPuzzle()
-                    .addImage(R.drawable.banaanschil, true)
-                    .addImage(R.drawable.bird, true)
-                    .addImage(R.drawable.chocolade, false)
-                    .addImage(R.drawable.grass, true)
-                    .question("As if your day couldn't get any better... The wind knocked over a garbage can and the ground is covered with mouth-watering snacks.What will you eat?")
+                .addImage(R.drawable.banaanschil, true)
+                .addImage(R.drawable.bird, true)
+                .addImage(R.drawable.chocolade, false)
+                .addImage(R.drawable.grass, true)
+                .question("Fallen garbage can, choose something to eat")
                 .puzzleDone()
                 .taskDone();
-
-        /*builder.addBeaconTask("3")
-                .beacon(1, 1)
-                .imageSelectPuzzle()
-                    .addImage(R.drawable.img1, false)
-                    .addImage(R.drawable.img2, true)
-                    .addImage(R.drawable.img3, false)
-                    .addImage(R.drawable.img4, false)
-                    .question("Best drink ever")
-                    .puzzleDone()
-                .location(1.0, 1.0)
-                .taskDone();*/
 
 
 
