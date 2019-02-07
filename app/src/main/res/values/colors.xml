@@ -8,4 +8,9 @@
     <color name="colorGPS">#30a487</color>
     <color name="colorBeacon">#4b3ab1</color>
     <color name="colorQR">#da8a33</color>
+
+    <color name="colorAppBackground">#7ae8ab</color>
+    <color name="colorAppText">#fdfdfd</color>
+    <color name="colorAppButton">#5fa881</color>
+    <color name="colorAppBar">#cbc5c5</color>
 </resources>

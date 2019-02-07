@@ -8,19 +8,34 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorAppBackground">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_title"/>
+        android:text="@string/app_title"
+        android:layout_marginBottom="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/colorAppText"/>
 
-    <Button
+    <android.support.v7.widget.AppCompatImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:maxHeight="300dp"
+        android:maxWidth="300dp"
+        android:src="@drawable/maindog"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:layout_width="140dp"
+        android:textColor="@color/colorAppText"
+        android:layout_height="75dp"
+        android:text="Escape"
+        android:background="@color/colorAppButton"
         android:onClick="start"
-        android:layout_gravity = "center"
+        android:layout_gravity = "center|"
         />
 
 </LinearLayout>
