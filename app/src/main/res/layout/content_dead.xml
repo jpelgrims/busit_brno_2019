@@ -11,16 +11,17 @@
     android:background="@color/colorAppBackground">
 
     <TextView
-        android:layout_margin="@dimen/fab_margin"
-        android:layout_marginTop="20dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/dead_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="10dp"
-        android:textSize="20dp"
-        android:textColor="@android:color/holo_red_dark"
-        android:background="@android:color/black"
-        android:fontFamily="@font/quicksand"/>
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/dead_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorAppText"
+        android:textSize="45dp" />
 
     <android.support.v7.widget.AppCompatImageView
         android:layout_width="150dp"
@@ -32,11 +33,24 @@
         android:scaleType="fitXY"
         />
 
+    <TextView
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dead_explanation"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAppText"
+        android:fontFamily="@font/quicksand"
+        android:layout_gravity="center"/>
+
     <Button
         android:id="@+id/continue_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="continue"
+        android:text="game over"
         android:textColor="@color/colorAppText"
         android:background="@drawable/btn_rounded"
         android:layout_gravity="center"
