@@ -1,6 +1,7 @@
 package cz.mendelu.busitweek_app1;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -103,6 +104,8 @@ public class ImagePuzzleActivity extends AppCompatActivity {
                         finish();
                     } else {
                         Toast.makeText(ImagePuzzleActivity.this, "Wrong answer", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(ImagePuzzleActivity.this, FinishActivity.class);
+                        startActivity(intent);
                     }
                 }
             });
