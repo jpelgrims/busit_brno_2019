@@ -29,6 +29,23 @@
             android:name=".BarkActivity"
             android:label="@string/title_activity_bark"
             android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeadActivity"
+            android:label="@string/title_activity_dead"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WildCatActivity"
+            android:label="@string/title_activity_wild_cat"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LostCatActivity"
+            android:label="@string/title_activity_lost_cat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CaughtCatActivity"
+            android:label="@string/title_activity_caught_cat"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DeadActivity"
             android:label="@string/title_activity_dead"
@@ -48,7 +65,7 @@
         <activity
             android:name=".EscapeActivity"
             android:label="@string/title_activity_escape"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".ReunionActivity"
             android:label="@string/title_activity_reunion"
