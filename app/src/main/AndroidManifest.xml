@@ -38,6 +38,10 @@
         <activity
             android:name=".FinishActivity"
             android:label="@string/title_activity_finish"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/title_activity_intro"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
