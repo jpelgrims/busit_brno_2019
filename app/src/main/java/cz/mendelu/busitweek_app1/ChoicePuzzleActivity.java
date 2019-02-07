@@ -109,6 +109,7 @@ public class ChoicePuzzleActivity extends AppCompatActivity {
         public int getItemCount() {
             return answersList.size();
         }
+        
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -120,7 +121,6 @@ public class ChoicePuzzleActivity extends AppCompatActivity {
                 answer = itemView.findViewById(R.id.answer);
             }
         }
-
     }
 
     private void skipCurrentTask() {

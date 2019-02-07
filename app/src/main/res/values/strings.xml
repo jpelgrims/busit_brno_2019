@@ -13,5 +13,9 @@
     <string name="name_question_hint">Enter your name here</string>
     <string name="app_title">A dog\'s life</string>
     <string name="finish_title">Game over!</string>
-    <string name="finish_text">Your owner heard you barking. You\'ve been caught! As a revenge, once home, you plan to shit on the carpet. Damn, it\'s good to be a dog.</string>
+    <string name="finish_text">As a revenge, once home, you plan to shit on the carpet. Bite the hand that feeds you!</string>
+    <string name="title_activity_reunion">ReunionActivity</string>
+    <string name="reunion_text">Your owner heard you barking. You\'ve been caught!</string>
+    <string name="continue_text">Continue</string>
+    <string name="play_again">Play Again</string>
 </resources>
