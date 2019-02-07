@@ -4,31 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".EscapeActivity"
-    tools:showIn="@layout/activity_escape"
-    android:orientation="vertical"
-    android:background="@color/colorAppBackground">
+    tools:showIn="@layout/activity_escape">
 
     <android.support.v7.widget.AppCompatImageView
         style="@style/style_image"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_gravity="center"
-        android:src="@drawable/escapedog"
-        />
+        android:layout_marginTop="70dp"
+        android:src="@drawable/escapedog" />
 
     <TextView
         style="@style/style_story_text"
-        android:text="@string/escape_text"
-        />
+        android:text="@string/escape_text" />
 
     <Button
         android:id="@+id/continue_button"
-        android:onClick="toMap"
         style="@style/style_btn_continue"
-        />
-
-
-
+        android:onClick="toMap" />
 </LinearLayout>

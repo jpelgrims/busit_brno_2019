@@ -12,14 +12,8 @@
 
         <TextView
             android:id="@+id/question"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_marginTop="30dp"
-            android:text="@string/garbage_text"
-            android:textAlignment="center"
-            android:textColor="@color/colorAppText"
-            android:textSize="25dp" />
+            style="@style/style_story_text"
+            android:text="@string/garbage_text"/>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/answers"

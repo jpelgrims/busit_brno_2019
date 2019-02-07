@@ -10,22 +10,17 @@
     android:orientation="vertical"
     android:background="@color/colorAppBackground">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_marginTop="25dp"
-            android:text="@string/finish_text"
-            android:textAlignment="center"
-            android:textColor="@color/colorAppText"
-            android:textSize="30dp" />
-
         <android.support.v7.widget.AppCompatImageView
-            android:layout_width="240dp"
-            android:layout_height="473dp"
-            android:layout_gravity="center"
-            android:maxHeight="300dp"
+            style="@style/style_image"
+            android:layout_width="238dp"
+            android:layout_height="421dp"
             android:src="@drawable/finishdog" />
+
+        <TextView
+            style="@style/style_story_text"
+            android:text="@string/finish_text"/>
+
+
 
 
 

@@ -10,36 +10,24 @@
     android:orientation="vertical"
     android:background="#7ddddb">
 
-    <TextView
-        android:id="@+id/wild_cat_title"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="55dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:textSize="20dp"
-        android:textColor="@color/colorAppText"
-        android:textAlignment="center"
-        android:text="@string/lost_cat_title"/>
-
 
     <ImageView
-        android:src="@drawable/smugcat"
         android:id="@+id/wild_cat_image"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="20dp"
-        android:layout_gravity="center"/>
+        style="@style/style_image"
+        android:layout_width="209dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/smugcat" />
+
+
+    <TextView
+        style="@style/style_story_text"
+        android:id="@+id/wild_cat_title"
+        android:text="@string/lost_cat_title"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Continue"
+        style="@style/style_btn_continue"
         android:onClick="continue_app"
-        android:background="@drawable/btn_rounded"
-        android:layout_gravity="center"
         />
 
 </LinearLayout>
