@@ -37,6 +37,10 @@
     <string name="title_activity_wild_cat">WildCatActivity</string>
     <string name="wild_cat_title">You spotted a wild cat. Since cats are inferior and need to be destroyed, you have no choice but to chase it. Start running! </string>
     <string name="wild_cat_text">...</string>
+    <string name="title_activity_pee">PeeActivity</string>
+    <string name="title_activity_dominated">DominatedActivity</string>
+    <string name="pee_title">You need to pee</string>
+    <string name="pee_text">...</string>
     <string name="title_activity_dead">DeadActivity</string>
     <string name="dead_text">YOU DIED</string>
     <string name="dead_explanation">Dog\'s don\'t eat chocolate! you should have known better!</string>
