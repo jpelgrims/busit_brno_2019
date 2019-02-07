@@ -6,14 +6,15 @@ import cz.mendelu.busItWeek.library.builder.StoryLineBuilder;
 public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
     public BusITWeekDatabaseHelper() {
-        super(21);
+        super(26);
     }
 
     @Override
     protected void onCreate(StoryLineBuilder builder) {
+        /*
         builder.addGPSTask("1")
-                .location(49.210094, 16.620026)
-                .radius(100)
+                .location(49.20968,16.6145)
+                .radius(1000)
                 .victoryPoints(10)
                 .hint("Hint")
                 .simplePuzzle()
@@ -23,15 +24,15 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                     .puzzleTime(3000)
                     .puzzleDone()
                 .taskDone();
-
+*/
         builder.addGPSTask("2")
-                .location(3.0, 2.0)
+                .location(49.20968,16.6145)
                 .radius(100)
                 .choicePuzzle()
-                    .addChoice("Text", false)
-                    .addChoice("text 2", true)
-                    .addChoice("sfsfs", false)
-                    .addChoice("dsfsdfs", false)
+                    .addChoice("Dead pigion", true)
+                    .addChoice("Chocolate", false)
+                    .addChoice("Egg shells ", true)
+                    .addChoice("Chewing gum", true)
                     .question("question")
                     .puzzleDone()
                 .taskDone();
