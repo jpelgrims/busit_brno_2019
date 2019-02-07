@@ -51,6 +51,10 @@
             android:name=".IntroActivity"
             android:label="@string/title_activity_intro"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
