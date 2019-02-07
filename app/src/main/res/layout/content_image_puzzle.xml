@@ -5,13 +5,20 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ImagePuzzleActivity"
     tools:showIn="@layout/activity_image_puzzle"
-    style="@style/style_nestedscrollview">
+    style="@style/style_nestedscrollview"
+    android:background="@color/colorAppBackground">
 
     <LinearLayout style="@style/style_linearlayout">
 
         <TextView
-            android:id="@+id/simple_puzzle_question"
-            style="@style/style_question_text" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_marginTop="30dp"
+            android:text="@string/garbage_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorAppText"
+            android:textSize="25dp" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/answers"
