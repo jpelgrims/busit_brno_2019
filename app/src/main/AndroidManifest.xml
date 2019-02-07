@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cz.mendelu.busitweek_app1">
+
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -11,13 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".BarkFailActivity"
+            android:label="@string/title_activity_bark_fail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MeasureActivity"
+            android:label="@string/title_activity_measure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".BarkActivity"
             android:label="@string/title_activity_bark"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EscapeActivity"
             android:label="@string/title_activity_escape"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ReunionActivity"
             android:label="@string/title_activity_reunion"

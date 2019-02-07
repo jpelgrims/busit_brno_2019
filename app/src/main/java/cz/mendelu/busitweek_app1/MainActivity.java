@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void start(View view) {
-        Intent intent = new Intent(MainActivity.this, IntroActivity.class);
+        Intent intent = new Intent(MainActivity.this, BarkActivity.class);
         startActivity(intent);
     }
 }
