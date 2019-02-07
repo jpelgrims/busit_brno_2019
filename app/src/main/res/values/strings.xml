@@ -21,4 +21,6 @@
     <string name="title_activity_bark">BarkActivity</string>
     <string name="bark_text">You bump into the dog you over-peed earlier. He\'s charging aggressively towards you. Start barking to show who\'s boss!</string>
     <string name="start_barking_button">Start barking</string>
+    <string name="title_activity_escape">EscapeActivity</string>
+    <string name="escape_text">You\'ve escaped your master\'s wicked clutches! Your nose picks up a delicious smell. You decide to find the origin of this lovely bouquet.</string>
 </resources>

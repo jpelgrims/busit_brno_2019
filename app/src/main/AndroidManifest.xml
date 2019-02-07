@@ -15,6 +15,10 @@
             android:label="@string/title_activity_bark"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
+            android:name=".EscapeActivity"
+            android:label="@string/title_activity_escape"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".ReunionActivity"
             android:label="@string/title_activity_reunion"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -52,6 +56,10 @@
             android:name=".IntroActivity"
             android:label="@string/title_activity_intro"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
