@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28ccb4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ReunionActivity"
+    tools:showIn="@layout/activity_reunion">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_marginTop="30dp"
+            android:text="@string/reunion_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorAppText"
+            android:textSize="30dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="224dp"
+            android:layout_height="399dp"
+            android:layout_gravity="center"
+            android:maxHeight="300dp"
+            android:src="@drawable/baasje" />
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_rounded"
+            android:onClick="start"
+            android:text="@string/continue_text"
+            android:textColor="@color/colorAppText" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

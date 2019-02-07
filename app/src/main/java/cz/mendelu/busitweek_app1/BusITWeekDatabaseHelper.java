@@ -35,29 +35,17 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                     .puzzleDone()
                 .taskDone();
 
-        /*builder.addGPSTask("2")
-                .location(3.0, 2.0)
+        builder.addGPSTask("4")
+                .location(49.20968,16.6145)
                 .radius(100)
-                .choicePuzzle()
-                    .addChoice("Text", false)
-                    .addChoice("text 2", true)
-                    .addChoice("sfsfs", false)
-                    .addChoice("dsfsdfs", false)
-                    .question("question")
-                    .puzzleDone()
-                .taskDone();
-
-        /*builder.addBeaconTask("3")
-                .beacon(1, 1)
                 .imageSelectPuzzle()
-                    .addImage(R.drawable.img1, false)
-                    .addImage(R.drawable.img2, true)
-                    .addImage(R.drawable.img3, false)
-                    .addImage(R.drawable.img4, false)
-                    .question("Best drink ever")
-                    .puzzleDone()
-                .location(1.0, 1.0)
-                .taskDone();*/
+                .addImage(R.drawable.banaanschil, true)
+                .addImage(R.drawable.bird, true)
+                .addImage(R.drawable.chocolade, false)
+                .addImage(R.drawable.grass, true)
+                .question("Fallen garbage can, chose something to eat")
+                .puzzleDone()
+                .taskDone();
 
 
 

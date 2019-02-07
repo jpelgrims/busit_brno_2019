@@ -1,6 +1,7 @@
 package cz.mendelu.busitweek_app1;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -96,7 +97,9 @@ public class ChoicePuzzleActivity extends AppCompatActivity {
                         currentTask.finish(true);
                         finish();
                     } else {
-                        Toast.makeText(ChoicePuzzleActivity.this, "Wrong answer", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ChoicePuzzleActivity.this, "Wrong answer, you died!", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(ChoicePuzzleActivity.this, FinishActivity.class);
+                        startActivity(intent);
                     }
                 }
             });
@@ -106,6 +109,7 @@ public class ChoicePuzzleActivity extends AppCompatActivity {
         public int getItemCount() {
             return answersList.size();
         }
+        
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -117,7 +121,6 @@ public class ChoicePuzzleActivity extends AppCompatActivity {
                 answer = itemView.findViewById(R.id.answer);
             }
         }
-
     }
 
     private void skipCurrentTask() {
