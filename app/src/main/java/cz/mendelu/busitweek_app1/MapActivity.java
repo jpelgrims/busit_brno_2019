@@ -51,6 +51,7 @@ import cz.mendelu.busItWeek.library.beacons.BeaconDefinition;
 import cz.mendelu.busItWeek.library.beacons.BeaconUtil;
 import cz.mendelu.busItWeek.library.map.MapUtil;
 import cz.mendelu.busItWeek.library.qrcode.QRCodeUtil;
+import cz.mendelu.busItWeek.library.timer.TimerUtil;
 
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback, PermissionsListener, LocationEngineListener {
 
@@ -69,6 +70,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     private ImageButton qrCodeButton;
     private CardView beaconScanningCard;
+    private long startTime;
+
+    private boolean beaconRun = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,9 +142,33 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
             if (currentTask instanceof BeaconTask) {
                 BeaconDefinition definition = new BeaconDefinition((BeaconTask) currentTask) {
+
+                    // beacon detected
                     @Override
                     public void execute() {
-                        runPuzzleActivity(currentTask.getPuzzle());
+                        // start timer if task == 1 and don't run puzzle
+                        // show activity with message and then show mapActivity again
+                        beaconUtil.stopRanging();
+
+                        if (!beaconRun && currentTask.getName().equals("1")) {
+                            // start timer
+                            startTime = System.currentTimeMillis();
+
+                            // show activity
+                            Intent intent = new Intent(MapActivity.this, MessageActivity.class);
+                            Bundle b = new Bundle();
+                            b.putString("task", "1");
+                            intent.putExtras(b);
+                            startActivity(intent);
+
+
+                        } else {
+                            runPuzzleActivity(currentTask.getPuzzle());
+                        }
+
+                        beaconRun = true;
+
+
                     }
                 };
 
@@ -159,6 +188,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         if (beaconUtil.isRanging()) {
             beaconUtil.stopRanging();
             beaconUtil.clearBeacons();
+            beaconRun = false;
         }
 
         if (mapBoxMap != null && locationEngine != null) {
@@ -309,7 +339,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     @Override
     public void onConnected() {
-
     }
 
     @Override
@@ -320,7 +349,21 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             LatLng taskLocation = new LatLng(currentTask.getLatitude(), currentTask.getLongitude());
 
             if (userLocation.distanceTo(taskLocation) < radius) {
-                runPuzzleActivity(currentTask.getPuzzle());
+                if (currentTask.getName().equals("2")) {
+                    // Calculate time passed
+                    long endTime = System.currentTimeMillis();
+                    long duration = endTime - startTime;
+
+                    // show activity with info
+                    Intent intent = new Intent(MapActivity.this, MessageActivity.class);
+                    Bundle b = new Bundle();
+                    b.putString("task", currentTask.getName());
+                    b.putLong("duration", duration); //Your id
+                    intent.putExtras(b);
+                    startActivity(intent);
+                } else {
+                    runPuzzleActivity(currentTask.getPuzzle());
+                }
             }
         }
     }
