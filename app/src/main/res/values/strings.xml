@@ -8,8 +8,8 @@
     <string name="title_activity_finish">FinishActivity</string>
     <string name="SimplePuzzleQuestionText">This is where the question will be placed</string>
     <string name="title_activity_intro">IntroActivity</string>
-    <string name="intro_text">You\'ve escaped your master\'s wicked clutches! You smell something delicious in the air.</string>
-    <string name="name_question">What is your name?</string>
+    <string name="intro_text">You\'re an andventurous dog and today you\'re going on a walk with your master. Even though you like your owner, she can be a little boring for your taste so you have a plan to lighten up the day!.</string>
+    <string name="name_question">But before we go, what was your name again? </string>
     <string name="name_question_hint">Enter your name here</string>
     <string name="app_title">A dog\'s life</string>
     <string name="finish_title">Game over!</string>

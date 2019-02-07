@@ -33,7 +33,7 @@
         android:layout_width="140dp"
         android:textColor="@color/colorAppText"
         android:layout_height="75dp"
-        android:text="Escape"
+        android:text="Start"
         android:background="@drawable/btn_rounded"
         android:onClick="start"
         android:layout_gravity = "center"
