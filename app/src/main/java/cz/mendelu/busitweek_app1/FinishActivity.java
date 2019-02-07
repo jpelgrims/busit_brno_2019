@@ -17,4 +17,9 @@ public class FinishActivity extends AppCompatActivity {
 
     }
 
+
+    public void play_again(View view) {
+
+    }
+
 }

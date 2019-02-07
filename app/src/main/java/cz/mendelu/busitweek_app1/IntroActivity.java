@@ -23,7 +23,4 @@ public class IntroActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void play_again(View view) {
-
-    }
 }
