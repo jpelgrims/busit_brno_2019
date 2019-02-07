@@ -34,4 +34,8 @@
     <string name="title_activity_wild_cat">WildCatActivity</string>
     <string name="wild_cat_title">You see a wild cat!</string>
     <string name="wild_cat_text">...</string>
+    <string name="title_activity_pee">PeeActivity</string>
+    <string name="title_activity_dominated">DominatedActivity</string>
+    <string name="pee_title">You need to pee</string>
+    <string name="pee_text">...</string>
 </resources>
