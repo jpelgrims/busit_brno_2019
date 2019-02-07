@@ -15,32 +15,19 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_marginTop="30dp"
-            android:text="@string/reunion_text"
-            android:textAlignment="center"
-            android:textColor="@color/colorAppText"
-            android:textSize="30dp" />
+            style="@style/style_story_text"
+            android:text="@string/reunion_text" />
 
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="224dp"
             android:layout_height="399dp"
-            android:layout_gravity="center"
-            android:maxHeight="300dp"
+            style="@style/style_image"
             android:src="@drawable/baasje" />
 
         <Button
             android:id="@+id/continue_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center"
-            android:background="@drawable/btn_rounded"
-            android:onClick="start"
-            android:text="@string/continue_text"
-            android:textColor="@color/colorAppText" />
+            style="@style/style_btn_continue"
+            android:background="@color/colorAppBar"/>
     </LinearLayout>
 
 

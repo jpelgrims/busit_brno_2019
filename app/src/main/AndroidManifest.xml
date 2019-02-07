@@ -16,15 +16,19 @@
         <activity
             android:name=".DominatedActivity"
             android:label="@string/title_activity_dominated"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".PeeActivity"
             android:label="@string/title_activity_pee"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".FoodActivity"
+            android:label="@string/title_activity_food"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
             android:name=".BarkActivity"
             android:label="@string/title_activity_bark"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".WildCatActivity"
             android:label="@string/title_activity_wild_cat"
