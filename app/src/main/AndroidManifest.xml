@@ -26,9 +26,21 @@
             android:label="@string/title_activity_food"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
+            android:name=".BarkFailActivity"
+            android:label="@string/title_activity_bark_fail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MeasureActivity"
+            android:label="@string/title_activity_measure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".BarkActivity"
             android:label="@string/title_activity_bark"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeadActivity"
+            android:label="@string/title_activity_dead"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WildCatActivity"
             android:label="@string/title_activity_wild_cat"
