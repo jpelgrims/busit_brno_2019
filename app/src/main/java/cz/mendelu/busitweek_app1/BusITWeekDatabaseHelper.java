@@ -21,7 +21,7 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                 .location(49.209827, 16.614823)
                 .radius(100)
                 .taskDone();
-
+/*
         builder.addGPSTask("3")
                 .location(49.209827, 16.614823)
                 .radius(100)
@@ -33,7 +33,7 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                     .hint("Testhint")
                     .puzzleTime(3000)
                     .puzzleDone()
-                .taskDone();
+                .taskDone();*/
 
         builder.addGPSTask("4")
                 .location(49.20968,16.6145)
@@ -46,7 +46,6 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                 .question("Fallen garbage can, choose something to eat")
                 .puzzleDone()
                 .taskDone();
-
 
 
     }
