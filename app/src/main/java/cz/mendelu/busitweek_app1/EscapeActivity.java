@@ -9,22 +9,25 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class IntroActivity extends AppCompatActivity {
+public class EscapeActivity extends AppCompatActivity {
 
     Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-    }
+        setContentView(R.layout.activity_escape);
+        addListenerOnButton();
+        /*
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        */
 
-
-    public void start(View view) {
-        Intent intent = new Intent(IntroActivity.this, EscapeActivity.class);
-        startActivity(intent);
     }
 
     public void addListenerOnButton() {
@@ -33,11 +36,10 @@ public class IntroActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(IntroActivity.this, EscapeActivity.class);
+                Intent intent = new Intent(EscapeActivity.this, MapActivity.class);
                 startActivity(intent);
             }
 
         });
     }
-
 }

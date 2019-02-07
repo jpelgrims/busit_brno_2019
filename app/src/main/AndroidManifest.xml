@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".EscapeActivity"
+            android:label="@string/title_activity_escape"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".ReunionActivity"
             android:label="@string/title_activity_reunion"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
