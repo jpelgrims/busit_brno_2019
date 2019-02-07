@@ -11,4 +11,5 @@
     <string name="intro_text">You\'ve escaped your master\'s wicked clutches! You smell something delicious in the air.</string>
     <string name="name_question">What is your name?</string>
     <string name="name_question_hint">Enter your name here</string>
+    <string name="app_title">A dog\'s life</string>
 </resources>
