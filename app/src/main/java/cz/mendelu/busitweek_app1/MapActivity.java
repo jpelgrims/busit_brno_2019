@@ -155,7 +155,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                             startTime = System.currentTimeMillis();
 
                             // show activity
-                            Intent intent = new Intent(MapActivity.this, MessageActivity.class);
+                            Intent intent = new Intent(MapActivity.this, WildCatActivity.class);
                             Bundle b = new Bundle();
                             b.putString("task", "1");
                             intent.putExtras(b);
@@ -311,7 +311,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 locationComponent.setLocationComponentEnabled(true);
             }
         } else {
-            permissionsManager = new PermissionsManager(this);
+            //permissionsManager = new PermissionsManager(this);
             permissionsManager.requestLocationPermissions(this);
         }
     }
@@ -354,13 +354,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     long endTime = System.currentTimeMillis();
                     long duration = endTime - startTime;
 
-                    // show activity with info
-                    Intent intent = new Intent(MapActivity.this, MessageActivity.class);
-                    Bundle b = new Bundle();
-                    b.putString("task", currentTask.getName());
-                    b.putLong("duration", duration); //Your id
-                    intent.putExtras(b);
-                    startActivity(intent);
+                    if (duration/1000 < 30) {
+                        Intent intent = new Intent(MapActivity.this, CaughtCatActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent intent = new Intent(MapActivity.this, LostCatActivity.class);
+                        startActivity(intent);
+                    }
                 } else {
                     runPuzzleActivity(currentTask.getPuzzle());
                 }

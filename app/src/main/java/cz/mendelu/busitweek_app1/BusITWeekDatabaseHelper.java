@@ -6,7 +6,7 @@ import cz.mendelu.busItWeek.library.builder.StoryLineBuilder;
 public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
     public BusITWeekDatabaseHelper() {
-        super(46);
+        super(65);
     }
 
     @Override
@@ -43,7 +43,7 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
                 .addImage(R.drawable.bird, true)
                 .addImage(R.drawable.chocolade, false)
                 .addImage(R.drawable.grass, true)
-                .question("Fallen garbage can, chose something to eat")
+                .question("Fallen garbage can, choose something to eat")
                 .puzzleDone()
                 .taskDone();
 

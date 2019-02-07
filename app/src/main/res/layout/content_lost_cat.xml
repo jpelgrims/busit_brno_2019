@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MessageActivity"
-    tools:showIn="@layout/activity_message">
+    tools:context=".LostCatActivity"
+    tools:showIn="@layout/activity_lost_cat"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/message_screen_title"
+        android:id="@+id/lost_cat_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_question"/>
+        android:text="@string/lost_cat_title"/>
 
     <TextView
-        android:id="@+id/message_screen_text"
+        android:id="@+id/lost_cat_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_question"/>
+        android:text="@string/lost_cat_text"/>
 
     <ImageView
-        android:id="@+id/message_screen_image"
+        android:id="@+id/lost_cat_image"
         android:layout_width="100dp"
         android:layout_height="100dp" />
 
@@ -32,4 +33,4 @@
         android:onClick="continue_app"
         />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

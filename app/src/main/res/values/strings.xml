@@ -21,4 +21,13 @@
     <string name="play_again">Play Again</string>
     <string name="title_activity_escape">EscapeActivity</string>
     <string name="escape_text">You\'ve escaped your master\'s wicked clutches! Your nose picks up a delicious smell. You decide to find the origin of this lovely bouquet.</string>
+    <string name="title_activity_caught_cat">CaughtCatActivity</string>
+    <string name="title_activity_lost_cat">LostCatActivity</string>
+    <string name="caught_cat_title">You caught the cat!</string>
+    <string name="caught_cat_text">...</string>
+    <string name="lost_cat_title">You lost the cat!</string>
+    <string name="lost_cat_text">...</string>
+    <string name="title_activity_wild_cat">WildCatActivity</string>
+    <string name="wild_cat_title">You see a wild cat!</string>
+    <string name="wild_cat_text">...</string>
 </resources>
