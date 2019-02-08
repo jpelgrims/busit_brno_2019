@@ -16,8 +16,7 @@
 
         <TextView
             style="@style/style_story_text"
-            android:text="@string/reunion_text"
-            text/>
+            android:text="@string/reunion_text"  />
 
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="224dp"
