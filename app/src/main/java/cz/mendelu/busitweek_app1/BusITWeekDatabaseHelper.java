@@ -6,7 +6,7 @@ import cz.mendelu.busItWeek.library.builder.StoryLineBuilder;
 public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
     public BusITWeekDatabaseHelper() {
-        super(116);
+        super(118);
     }
 
     @Override
@@ -26,7 +26,7 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
         // PeeTask
         builder.addGPSTask("3")
-                .location(49.210775, 16.616693)
+                .location(49.210740, 16.616713)
                 .radius(10)
                 .taskDone();
 

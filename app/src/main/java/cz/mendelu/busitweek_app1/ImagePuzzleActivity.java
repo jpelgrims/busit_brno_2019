@@ -127,7 +127,6 @@ public class ImagePuzzleActivity extends AppCompatActivity {
         currentTask = storyLine.currentTask();
         if (currentTask != null) {
             puzzle = (ImageSelectPuzzle) currentTask.getPuzzle();
-            questionTextView.setText(puzzle.getQuestion());
             // answerEditText.setHint(puzzle.getHint());
             initializeList();
         }

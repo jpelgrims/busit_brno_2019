@@ -13,9 +13,7 @@
             style="@style/style_story_text"
             android:text="@string/garbage_text"/>
 
-        <TextView
-            android:id="@+id/simple_puzzle_question"
-            style="@style/style_question_text" />
+
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/answers"

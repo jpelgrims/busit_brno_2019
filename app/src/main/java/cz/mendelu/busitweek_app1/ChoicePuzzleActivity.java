@@ -62,7 +62,6 @@ public class ChoicePuzzleActivity extends AppCompatActivity {
             }
         });
 
-        questionTextView = findViewById(R.id.simple_puzzle_question);
         storyLine = StoryLine.open(this, BusITWeekDatabaseHelper.class);
         recyclerView = findViewById(R.id.answers);
 
@@ -139,7 +138,6 @@ public class ChoicePuzzleActivity extends AppCompatActivity {
         currentTask = storyLine.currentTask();
         if (currentTask != null) {
             puzzle = (ChoicePuzzle) currentTask.getPuzzle();
-            questionTextView.setText(puzzle.getQuestion());
             // answerEditText.setHint(puzzle.getHint());
             initializeList();
         }
