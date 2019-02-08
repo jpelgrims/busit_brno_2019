@@ -11,20 +11,18 @@
     tools:showIn="@layout/activity_intro">
 
 
-
     <android.support.v7.widget.AppCompatImageView
         style="@style/style_image"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="226dp"
+        android:layout_height="215dp"
         android:layout_gravity="center"
-        android:src="@drawable/namedog"
-        />
+        android:src="@drawable/namedog" />
 
     <TextView
         style="@style/style_story_text"
         android:text="@string/intro_text"
         android:layout_margin="15dp"
-        android:textSize="16sp"/>
+        android:textSize="18dp"/>
 
 
     <TextView
@@ -32,7 +30,7 @@
         android:text="@string/name_question"
         android:layout_marginTop="0dp"
         android:layout_margin="15dp"
-        android:textSize="16sp" />
+        android:textSize="18dp" />
 
     <EditText
         android:id="@+id/simple_puzzle_answer"
