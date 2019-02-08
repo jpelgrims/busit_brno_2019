@@ -48,24 +48,6 @@ public class ImagePuzzleActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                skipCurrentTask();
-            }
-        });
-
         questionTextView = findViewById(R.id.simple_puzzle_question);
         storyLine = StoryLine.open(this, BusITWeekDatabaseHelper.class);
         recyclerView = findViewById(R.id.answers);
@@ -104,7 +86,7 @@ public class ImagePuzzleActivity extends AppCompatActivity {
                         finish();
                     } else {
                         Toast.makeText(ImagePuzzleActivity.this, "Wrong answer", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(ImagePuzzleActivity.this, FinishActivity.class);
+                        Intent intent = new Intent(ImagePuzzleActivity.this, DeadActivity.class);
                         startActivity(intent);
                     }
                 }

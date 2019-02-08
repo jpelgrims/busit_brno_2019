@@ -14,21 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".DigActivity"
+            android:label="@string/title_activity_dig"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".DominatedActivity"
             android:label="@string/title_activity_dominated"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PeeActivity"
             android:label="@string/title_activity_pee"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".FoodActivity"
-            android:label="@string/title_activity_food"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
             android:name=".BarkFailActivity"
             android:label="@string/title_activity_bark_fail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MeasureActivity"
             android:label="@string/title_activity_measure"

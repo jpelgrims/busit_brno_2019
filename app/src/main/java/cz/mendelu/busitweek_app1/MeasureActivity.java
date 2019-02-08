@@ -1,11 +1,15 @@
 package cz.mendelu.busitweek_app1;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -45,7 +49,15 @@ public class MeasureActivity extends AppCompatActivity {
         setContentView(R.layout.activity_measure);
         timerView = (TextView) findViewById(R.id.timer);
         onCreateMeasurements();
-        timer();
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[] { Manifest.permission.RECORD_AUDIO },
+                    10);
+        } else {
+            timer();
+        }
+
     }
 
     public void timer() {
@@ -166,6 +178,18 @@ public class MeasureActivity extends AppCompatActivity {
         double amp =  getAmplitude();
         mEMA = EMA_FILTER * amp + (1.0 - EMA_FILTER) * mEMA;
         return mEMA;
+    }
+
+    @Override public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                                     @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 10) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                timer();
+            }else{
+                //User denied Permission.
+            }
+        }
     }
 
 

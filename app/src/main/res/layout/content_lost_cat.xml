@@ -23,7 +23,8 @@
     <TextView
         style="@style/style_story_text"
         android:id="@+id/wild_cat_title"
-        android:text="@string/lost_cat_title"/>
+        android:text="@string/lost_cat_title"
+        android:textSize="20sp"/>
 
     <Button
         style="@style/style_btn_continue"

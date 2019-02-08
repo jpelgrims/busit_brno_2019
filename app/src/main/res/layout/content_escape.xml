@@ -19,7 +19,8 @@
 
     <TextView
         style="@style/style_story_text"
-        android:text="@string/escape_text" />
+        android:text="@string/escape_text"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/continue_button"

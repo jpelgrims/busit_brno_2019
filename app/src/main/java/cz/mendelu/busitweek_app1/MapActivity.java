@@ -353,7 +353,17 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             LatLng taskLocation = new LatLng(currentTask.getLatitude(), currentTask.getLongitude());
 
             if (userLocation.distanceTo(taskLocation) < radius) {
-                if (currentTask.getName().equals("2")) {
+                if (currentTask.getName().equals("1"))  {
+                    startTime = System.currentTimeMillis();
+
+                    // show activity
+                    Intent intent = new Intent(MapActivity.this, WildCatActivity.class);
+                    Bundle b = new Bundle();
+                    b.putString("task", "1");
+                    intent.putExtras(b);
+                    startActivity(intent);
+                }
+                else if (currentTask.getName().equals("2")) {
                     // Calculate time passed
                     long endTime = System.currentTimeMillis();
                     long duration = endTime - startTime;
@@ -365,14 +375,19 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                         Intent intent = new Intent(MapActivity.this, LostCatActivity.class);
                         startActivity(intent);
                     }
+
+                } else if (currentTask.getName().equals("3")) {
+                    Intent intent = new Intent(MapActivity.this, PeeActivity.class);
+                    startActivity(intent);
+                } else if (currentTask.getName().equals("4")) {
+                    Intent intent = new Intent(MapActivity.this, DigActivity.class);
+                    startActivity(intent);
+                } else if (currentTask.getName().equals("6")) {
+                    Intent intent = new Intent(MapActivity.this, BarkActivity.class);
+                    startActivity(intent);
                 } else {
                     runPuzzleActivity(currentTask.getPuzzle());
                 }
-            }
-        } else if (currentTask != null && currentTask instanceof CodeTask) {
-            if (currentTask.getName().equals("5")) {
-                Intent intent = new Intent(MapActivity.this, PeeActivity.class);
-                startActivity(intent);
             }
         }
     }

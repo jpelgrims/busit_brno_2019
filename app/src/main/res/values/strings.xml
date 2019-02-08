@@ -11,7 +11,7 @@
     <string name="intro_text">You\'re an adventurous dog and today you\'re going on a walk with your so-called master. Even though you like your owner, she can be a little boring for your taste so you have a plan to lighten up the day!</string>
     <string name="name_question">But before we go, what was your name again? </string>
     <string name="name_question_hint">Enter your name here</string>
-    <string name="app_title">A Dog\'s Life.</string>
+    <string name="app_title">A Dog\'s Life</string>
     <string name="finish_title">Game over!</string>
     <string name="finish_text">You are dissapointed, but not defeated. As a revenge, once home, you plan to shit on the carpet. Bite the hand that feeds you!</string>
     <string name="title_activity_message">MessageActivity</string>
@@ -20,10 +20,10 @@
     <string name="continue_text">Continue</string>
     <string name="play_again">Play Again</string>
     <string name="title_activity_bark">BarkActivity</string>
-    <string name="bark_text">You bump into the dog you over-peed earlier. He\'s charging aggressively towards you. Start barking to show who\'s boss!</string>
+    <string name="bark_text">You bump into the dog whose territory you peed in earlier. He\'s charging aggressively towards you. Start barking to show who\'s boss!</string>
     <string name="start_barking_button">Start barking</string>
     <string name="title_activity_escape">EscapeActivity</string>
-    <string name="escape_text">You\'ve escaped your master\'s wicked clutches! Your nose picks up a delicious smell. You decide to find the origin of this lovely bouquet.</string>
+    <string name="escape_text">You\'ve escaped your master\'s wicked clutches! Your nose picks up a delicious smell. You decide to find the origin of this lovely fragrance.</string>
     <string name="title_activity_measure">MeasureActivity</string>
     <string name="title_activity_bark_fail">BarkFailActivity</string>
     <string name="bark_fail_text">What are you? A chihuahua? That doesnt scare him. Bark louder!</string>
@@ -38,13 +38,13 @@
     <string name="wild_cat_title">You spotted a wild cat. Since cats are inferior and need to be destroyed, you have no choice but to chase it. Start running! </string>
     <string name="wild_cat_text">...</string>
     <string name="title_activity_pee">PeeActivity</string>
-    <string name="title_activity_dominated">DominatedActivity</string>
-    <string name="pee_title">You need to pee</string>
-    <string name="pee_text">...</string>
+    <string name="title_activity_dominated">...</string>
+    <string name="pee_title">"You've found the perfect tree to compensate for your insecurities. Pee against the tree (not literally)!"</string>
     <string name="title_activity_dead">DeadActivity</string>
     <string name="dead_text">YOU DIED</string>
     <string name="dead_explanation">Dog\'s can\'t eat chocolate! You should have known better!</string>
     <string name="title_activity_food">FoodActivity</string>
-    <string name="dominated_title">dominated_title</string>
-    <string name="dominated_text">dominated_text</string>
+    <string name="dominated_title">You marked the tree. The territory is yours now! Wait, there\'s that enchanting smell again.</string>
+    <string name="title_activity_dig">DigActivity</string>
+    <string name="dig_titlez">You think you found the origin of the smell. Start digging to make sure!</string>
 </resources>

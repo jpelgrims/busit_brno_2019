@@ -9,20 +9,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import cz.mendelu.busItWeek.library.StoryLine;
 import cz.mendelu.busItWeek.library.qrcode.QRCodeUtil;
 
-public class PeeActivity extends AppCompatActivity {
+public class DigActivity extends AppCompatActivity {
+
+    private StoryLine storyLine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pee);
+        setContentView(R.layout.activity_dig);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        storyLine = StoryLine.open(this, BusITWeekDatabaseHelper.class);
     }
 
     public void startScan(View view) {
-        QRCodeUtil.startQRScan(PeeActivity.this);
+        QRCodeUtil.startQRScan(DigActivity.this);
     }
 
     @Override
@@ -31,12 +36,9 @@ public class PeeActivity extends AppCompatActivity {
 
         String qrCode = QRCodeUtil.onScanResult(this, requestCode, resultCode, data);
         if (qrCode != null) {
-            Intent intent = new Intent(PeeActivity.this, DominatedActivity.class);
-            startActivity(intent);
+            storyLine.currentTask().finish(true);
+            startActivity(new Intent(this, ImagePuzzleActivity.class));
             finish();
         }
     }
-
-
-
 }

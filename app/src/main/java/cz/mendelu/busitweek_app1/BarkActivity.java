@@ -22,26 +22,16 @@ import java.io.IOException;
 
 public class BarkActivity extends AppCompatActivity {
 
-    Button start_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bark);
-        addListenerOnButton();
     }
 
 
-    public void addListenerOnButton() {
-        start_button = (Button) findViewById(R.id.start_barking_button);
-        start_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(BarkActivity.this, MeasureActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
+    public void startMeasure(View view) {
+        Intent intent = new Intent(BarkActivity.this, MeasureActivity.class);
+        startActivity(intent);
     }
 
 

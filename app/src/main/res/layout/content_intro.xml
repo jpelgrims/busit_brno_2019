@@ -18,20 +18,21 @@
         android:layout_height="250dp"
         android:layout_gravity="center"
         android:src="@drawable/namedog"
-        android:layout_marginTop="12dp"/>
+        />
 
     <TextView
         style="@style/style_story_text"
         android:text="@string/intro_text"
         android:layout_margin="15dp"
-        android:textSize="18sp"/>
+        android:textSize="16sp"/>
 
 
     <TextView
         style="@style/style_story_text"
         android:text="@string/name_question"
+        android:layout_marginTop="0dp"
         android:layout_margin="15dp"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/simple_puzzle_answer"
@@ -41,9 +42,8 @@
         android:hint="@string/name_question_hint"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/white"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:layout_margin="10dp"
-
         />
 
     <Button

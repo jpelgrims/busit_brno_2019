@@ -6,50 +6,52 @@ import cz.mendelu.busItWeek.library.builder.StoryLineBuilder;
 public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
     public BusITWeekDatabaseHelper() {
-        super(93);
+        super(110);
     }
 
     @Override
     protected void onCreate(StoryLineBuilder builder) {
 
-        builder.addBeaconTask("1")
-                .beacon(249, 61625)
-                .location(49.209827, 16.614823)
+        // See cat
+        builder.addGPSTask("1")
+                .radius(10)
+                .location(49.215457, 16.629973)
                 .taskDone();
 
+        // Catch or lose cat
         builder.addGPSTask("2")
-                .location(49.209825, 16.614821)
+                .location(49.215457, 16.629973)
                 .radius(10)
                 .taskDone();
 
+        // PeeTask
         builder.addGPSTask("3")
-                .location(49.209827, 16.614823)
-                .radius(100)
-                .victoryPoints(10)
-                .hint("Hint")
-                .simplePuzzle()
-                    .question("What is the best Bus IT Week?")
-                    .answer("Brno")
-                    .hint("Testhint")
-                    .puzzleTime(3000)
-                    .puzzleDone()
+                .location(49.215457, 16.629973)
+                .radius(10)
                 .taskDone();
 
+        // DigTask
         builder.addGPSTask("4")
-                .location(49.20968,16.6145)
+                .location(49.215457, 16.629973)
+                .radius(10)
+                .taskDone();
+
+        builder.addGPSTask("5")
+                .location(49.215457, 16.629973)
                 .radius(100)
                 .imageSelectPuzzle()
                 .addImage(R.drawable.banaanschil, true)
                 .addImage(R.drawable.bird, true)
                 .addImage(R.drawable.chocolade, false)
                 .addImage(R.drawable.grass, true)
-                .question("Fallen garbage can, choose something to eat")
+                .question("You found some edible stuff! What do you eat?")
                 .puzzleDone()
                 .taskDone();
 
-        builder.addCodeTask("5")
-                .location(49.20968,16.6145)
-                .qr("peeing")
+        //BarkTask
+        builder.addGPSTask("6")
+                .location(49.215457, 16.629973)
+                .radius(10)
                 .taskDone();
 
 

@@ -11,37 +11,31 @@
     android:orientation="vertical"
     android:background="@color/colorAppBackground">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pee_title"
-        android:layout_marginBottom="50dp"
-        android:textSize="35dp"
-        android:textColor="@color/colorAppText"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pee_text"
-        android:layout_marginBottom="50dp"
-        android:textSize="35dp"
-        android:textColor="@color/colorAppText"/>
-
     <android.support.v7.widget.AppCompatImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="204dp"
+        android:layout_height="224dp"
         android:maxHeight="300dp"
         android:maxWidth="300dp"
-        android:src="@drawable/maindog"
+        android:src="@drawable/dogpee"
         android:layout_gravity="center"
         android:scaleType="fitXY"
         android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/pee_title"
+        android:textColor="@color/colorAppText"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
 
     <Button
         android:layout_width="140dp"
         android:textColor="@color/colorAppText"
         android:layout_height="75dp"
-        android:text="Start"
+        android:text="Let it rain"
         android:background="@drawable/btn_rounded"
         android:onClick="startScan"
         android:layout_gravity = "center"

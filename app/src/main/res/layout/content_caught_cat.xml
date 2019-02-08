@@ -21,7 +21,8 @@
     <TextView
         android:id="@+id/wild_cat_title"
         style="@style/style_story_text"
-        android:text="@string/caught_cat_title"/>
+        android:text="@string/caught_cat_title"
+        android:textSize="20sp"/>
 
 
 
