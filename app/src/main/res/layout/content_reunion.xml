@@ -14,21 +14,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            style="@style/style_story_text"
-            android:text="@string/reunion_text"
-            text/>
-
         <android.support.v7.widget.AppCompatImageView
+            style="@style/style_image"
             android:layout_width="224dp"
             android:layout_height="399dp"
-            style="@style/style_image"
             android:src="@drawable/baasje" />
+
+        <TextView
+            style="@style/style_story_text"
+            android:text="@string/reunion_text" />
 
         <Button
             android:id="@+id/continue_button"
-            style="@style/style_btn_continue"
-            android:background="@color/colorAppBar"/>
+            style="@style/style_btn_continue"/>
     </LinearLayout>
 
 

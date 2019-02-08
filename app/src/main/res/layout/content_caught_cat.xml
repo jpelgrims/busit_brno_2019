@@ -15,7 +15,7 @@
         style="@style/style_image"
         android:layout_width="203dp"
         android:layout_height="254dp"
-        android:src="@drawable/smugdog"
+        android:src="@drawable/caughtcatdog"
         android:layout_marginTop="70dp"/>
 
     <TextView

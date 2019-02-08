@@ -13,33 +13,19 @@
 
 
     <android.support.v7.widget.AppCompatImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:maxHeight="300dp"
-        android:maxWidth="300dp"
-        android:src="@drawable/maindog"
-        android:layout_gravity="center"
-        android:scaleType="fitXY"
-        android:layout_marginBottom="25dp"/>
+        style="@style/style_image"
+        android:layout_width="218dp"
+        android:layout_height="217dp"
+        android:src="@drawable/digdog" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dig_titlez"
-        android:layout_marginBottom="100dp"
-        android:textSize="22sp"
-        android:textColor="@color/colorAppText"
-        android:layout_margin="15dp"
-        android:textAlignment="center"/>
+        style="@style/style_story_text"
+        android:text="@string/dig_titlez"/>
 
     <Button
-        android:layout_width="140dp"
-        android:textColor="@color/colorAppText"
-        android:layout_height="75dp"
+        style="@style/style_btn_continue"
         android:text="Start"
-        android:background="@drawable/btn_rounded"
         android:onClick="startScan"
-        android:layout_gravity = "center"
         />
 
 </LinearLayout>
