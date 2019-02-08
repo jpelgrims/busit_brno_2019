@@ -14,6 +14,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            style="@style/style_story_text"
+            android:text="@string/reunion_text"  />
+
         <android.support.v7.widget.AppCompatImageView
             style="@style/style_image"
             android:layout_width="224dp"
