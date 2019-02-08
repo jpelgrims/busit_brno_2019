@@ -13,7 +13,7 @@
     <string name="name_question_hint">Enter your name here</string>
     <string name="app_title">A Dog\'s Life</string>
     <string name="finish_title">Game over!</string>
-    <string name="finish_text">You are dissapointed, but not defeated. As a revenge, once home, you plan to shit on the carpet. Bite the hand that feeds you!</string>
+    <string name="finish_text">You are dissapointed, but not defeated. As a revenge, once home, you plan to shit on the carpet. Bite the hand that feeds you! \n\nSee you on your next adventure!</string>
     <string name="title_activity_message">MessageActivity</string>
     <string name="title_activity_reunion">ReunionActivity</string>
     <string name="reunion_text">Oh no! Your owner heard you barking. You\'ve been caught!</string>

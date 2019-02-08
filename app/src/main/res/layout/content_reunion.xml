@@ -20,8 +20,8 @@
 
         <android.support.v7.widget.AppCompatImageView
             style="@style/style_image"
-            android:layout_width="224dp"
-            android:layout_height="399dp"
+            android:layout_width="194dp"
+            android:layout_height="310dp"
             android:src="@drawable/baasje" />
 
         <TextView
