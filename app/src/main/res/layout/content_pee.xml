@@ -4,41 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity = "center"
+    android:background="@color/colorAppBackground"
+    android:gravity="center"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".PeeActivity"
-    tools:showIn="@layout/activity_pee"
-    android:orientation="vertical"
-    android:background="@color/colorAppBackground">
+    tools:showIn="@layout/activity_pee">
 
     <android.support.v7.widget.AppCompatImageView
+        style="@style/style_image"
         android:layout_width="204dp"
         android:layout_height="224dp"
-        android:maxHeight="300dp"
-        android:maxWidth="300dp"
-        android:src="@drawable/dogpee"
-        android:layout_gravity="center"
-        android:scaleType="fitXY"
-        android:layout_marginBottom="25dp"/>
+        android:src="@drawable/dogpee" />
 
     <TextView
-        android:layout_width="365dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_marginBottom="50dp"
-        android:text="@string/pee_title"
-        android:textColor="@color/colorAppText"
-        android:textSize="20sp"
-        android:textAlignment="center"/>
+        style="@style/style_story_text"
+        android:text="@string/pee_title" />
 
     <Button
-        android:layout_width="140dp"
-        android:textColor="@color/colorAppText"
-        android:layout_height="75dp"
-        android:text="Let it rain"
-        android:background="@drawable/btn_rounded"
+        style="@style/style_btn_continue"
         android:onClick="startScan"
-        android:layout_gravity = "center"
-        />
+        android:text="Let it rain" />
 
 </LinearLayout>

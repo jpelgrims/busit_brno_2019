@@ -6,7 +6,7 @@ import cz.mendelu.busItWeek.library.builder.StoryLineBuilder;
 public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
     public BusITWeekDatabaseHelper() {
-        super(111);
+        super(112);
     }
 
     @Override
@@ -26,18 +26,18 @@ public class BusITWeekDatabaseHelper extends StoryLineDatabaseHelper {
 
         // PeeTask
         builder.addGPSTask("3")
-                .location(49.210990, 16.616771)
+                .location(449.210775, 16.616693)
                 .radius(5)
                 .taskDone();
 
         // DigTask
         builder.addGPSTask("4")
-                .location(49.211448, 16.617609)
+                .location(49.209808, 16.616381)
                 .radius(5)
                 .taskDone();
 
         builder.addGPSTask("5")
-                .location(49.211448, 16.61760)
+                .location(49.209808, 16.616381)
                 .radius(5)
                 .imageSelectPuzzle()
                 .addImage(R.drawable.banaanschil, true)
